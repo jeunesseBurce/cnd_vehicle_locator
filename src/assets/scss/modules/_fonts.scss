@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Brandon Text Regular';
+    src: url('assets/fonts/Regular/BrandonText-Regular.woff2') format('woff2'),
+        url('assets/fonts/Regular/BrandonText-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brandon Text BoldItalic';
+    src: url('assets/fonts/BoldItalic/BrandonText-BoldItalic.woff2') format('woff2'),
+        url('assets/fonts/BoldItalic/BrandonText-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Brandon Text RegularItalic';
+    src: url('assets/fonts/RegularItalic/BrandonText-RegularItalic.woff2') format('woff2'),
+        url('assets/fonts/RegularItalic/BrandonText-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Brandon Text Bold';
+    src: url('assets/fonts/Bold/BrandonText-Bold.woff2') format('woff2'),
+        url('assets/fonts/Bold/BrandonText-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}

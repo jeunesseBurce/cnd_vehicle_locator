@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'cnd-project'`, () => {
+  it(`should have as title 'Lunar Locator'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('cnd-project');
+    expect(app.title).toEqual('Lunar Locator');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('cnd-project app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('Lunar Locator app is running!');
   });
 });

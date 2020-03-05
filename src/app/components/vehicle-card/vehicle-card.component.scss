@@ -1,0 +1,11 @@
+$primary-font: 'Brandon Text Regular';
+$primary-bold: 'Brandon Text Bold';
+
+
+h3 {
+    font-family: $primary-bold;
+}
+
+span {
+    font-family: $primary-font;
+}
