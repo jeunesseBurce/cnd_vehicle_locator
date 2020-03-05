@@ -2,7 +2,10 @@
 @import './assets/scss/modules/_fonts.scss';
 @import './app/components/main/main.component.scss';
 @import './app/components/vehicle-card/vehicle-card.component.scss';
+@import './app/components/battery/battery.component.scss';
+@import './app/components/map/map.component.scss';
 
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+#map { height: 100% }

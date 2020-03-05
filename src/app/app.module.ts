@@ -9,19 +9,29 @@ import { MainComponent } from './components/main/main.component';
 import { VehicleCardComponent } from './components/vehicle-card/vehicle-card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule }  from '@angular/material/card';
+import { BatteryComponent } from './components/battery/battery.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MapComponent } from './components/map/map.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
-    VehicleCardComponent
+    VehicleCardComponent,
+    BatteryComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    MatGridListModule,
+    MatExpansionModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
