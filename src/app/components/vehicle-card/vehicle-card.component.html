@@ -1,10 +1,22 @@
-<mat-card *ngFor="let vehicle of vehicles">
-    <mat-card-header>
-        <mat-card-title> <h3> {{vehicle.name}} </h3> </mat-card-title>
-    </mat-card-header>
-    <mat-card-content> 
-       <span> Model: {{vehicle.model}} </span>
-        <span> Power Level Percent: {{vehicle.power_level_percent}} </span>
-    </mat-card-content>
-</mat-card>
+<mat-accordion *ngFor="let vehicle of vehicles">
+    <div class="rover-list">
+        <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <div class="vehicle">
+                    <h3> {{vehicle.name}} </h3>
+                    <div class="battery">
+                    <app-battery [color]="vehicle.power_level_percent < 50 ? low : high" [percentage]="vehicle.power_level_percent"></app-battery>
+                    </div>
+                </div>
+            </mat-panel-title>
+            </mat-expansion-panel-header>
 
+            <div class="description">
+                <p> Model: {{vehicle.model}} </p> 
+                <p> Power Level Percent: {{vehicle.power_level_percent}} </p> 
+            </div>
+        </mat-expansion-panel>
+    </div>
+  </mat-accordion>
+  

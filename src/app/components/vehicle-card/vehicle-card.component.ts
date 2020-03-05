@@ -11,4 +11,7 @@ export class VehicleCardComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  high = '#3DCC93';
+  low = '#dd4b39';
 }

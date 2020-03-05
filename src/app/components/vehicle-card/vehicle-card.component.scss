@@ -2,10 +2,36 @@ $primary-font: 'Brandon Text Regular';
 $primary-bold: 'Brandon Text Bold';
 
 
-h3 {
-    font-family: $primary-bold;
-}
-
 span {
     font-family: $primary-font;
+}
+
+p {
+    color: #AAAAAA;
+    font-family: $primary-font;
+}
+
+.vehicle {
+    display: block;
+    img {
+        margin: 5px;
+    }
+    h3 {
+        font-family: $primary-bold;
+        display: inline-block;
+    }
+
+    .battery {
+        margin: 0px 20px;
+        vertical-align: middle;
+        display: inline-block;
+    }
+}
+
+.description {
+    margin: 10px;
+}
+
+.rover-list {
+    margin: 5px;
 }
