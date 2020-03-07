@@ -24,3 +24,17 @@ $primary-bold: 'Brandon Text Bold';
     color: #AAAAAA;
  }
 }
+
+.example-container {
+    z-index: 2;
+    height: 100%;
+}
+
+.side-container {
+    height: 100%;
+}
+
+.map-container {
+    height: 650px;
+    margin: 0px 10px;
+}

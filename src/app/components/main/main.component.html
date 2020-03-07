@@ -1,15 +1,21 @@
-<div class="header-container">
-    <img src="../assets/images/RND.jpg" height="100" width="150" alt="Rover Next Door Logo">
-    <h1> {{ title }} </h1>
-</div>
+<div class="main-container">
+    <div class="header-container">
+        <img src="../assets/images/RND.jpg" height="100" width="150" alt="Rover Next Door Logo">
+        <h1> {{ title }} </h1>
+    </div>
 
-<mat-drawer-container class="example-container">
-    <mat-drawer mode="side" opened>
-        <app-vehicle-card [vehicles]="vehicles"></app-vehicle-card>
-    </mat-drawer>
-    <mat-drawer-content>
+    <mat-drawer-container class="example-container">
+        <mat-drawer mode="side" opened>
+            <div class="side-container">
+                <app-forms></app-forms>
+                <app-vehicle-card></app-vehicle-card>
+            </div>
+        </mat-drawer>
+
         <div class="map-container">
             <app-map></app-map>
         </div>
-    </mat-drawer-content>
-</mat-drawer-container>
+    </mat-drawer-container>
+</div>
+
+
