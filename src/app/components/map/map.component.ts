@@ -12,9 +12,6 @@ export class MapComponent implements OnInit, AfterViewInit {
   map: google.maps.Map;
   lat = 0;
   lng = 0;
-  pinMarker;
-  commandCenterMarker;
-  vehicles = [];
   coordinates = new google.maps.LatLng(this.lat, this.lng);
   mapOptions: google.maps.MapOptions = {
     center: this.coordinates,
@@ -24,6 +21,21 @@ export class MapComponent implements OnInit, AfterViewInit {
       mapTypeIds: ['moon']
     }
   };
+  
+  pinMarker = new google.maps.Marker({
+    position: this.coordinates,
+    icon: '../../../assets/images/placeholder.png',
+    map: this.map,
+  });
+
+  commandCenterMarker = new google.maps.Marker({
+    position: new google.maps.LatLng(0.681400, 23.460550),
+    icon: '../../../assets/images/control-center.png',
+    map: this.map,
+  });
+
+
+  vehicles = [];
 
   constructor(
     private data: DataService
@@ -71,16 +83,8 @@ export class MapComponent implements OnInit, AfterViewInit {
       map: this.map,
     });
 
-    
     this.pinMarker.setMap(this.map);
-    this.pinMarker.setZIndex(3);
-
-    this.commandCenterMarker = new google.maps.Marker({
-      position: new google.maps.LatLng(0.681400, 23.460550),
-      icon: '../../../assets/images/control-center.png',
-      map: this.map,
-    });
-
+    this.pinMarker.setZIndex(999);
     this.commandCenterMarker.setMap(this.map);
 
     this.map.mapTypes.set('moon', moonMapType);
@@ -110,8 +114,9 @@ export class MapComponent implements OnInit, AfterViewInit {
       const [lat, long] = coord;
       const position = new google.maps.LatLng(lat, long);
       
+      this.pinMarker.setZIndex(999);
       this.pinMarker.setPosition(position);
-      this.pinMarker.setZIndex(3);
+      
     })
   }
 }
