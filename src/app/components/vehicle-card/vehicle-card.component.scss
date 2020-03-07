@@ -2,12 +2,8 @@ $primary-font: 'Brandon Text Regular';
 $primary-bold: 'Brandon Text Bold';
 
 
-span {
-    font-family: $primary-font;
-}
-
 p {
-    color: #AAAAAA;
+    color: #666;
     font-family: $primary-font;
 }
 
@@ -19,6 +15,11 @@ p {
     h3 {
         font-family: $primary-bold;
         display: inline-block;
+    }
+
+    span {
+        font-family: $primary-bold;
+        color: #222222;
     }
 
     .battery {

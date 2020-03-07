@@ -1,7 +1,7 @@
 <mat-accordion *ngFor="let vehicle of vehicles">
     <div class="rover-list">
         <mat-expansion-panel>
-        <mat-expansion-panel-header>
+        <mat-expansion-panel-header (click)="onClickMe(vehicle)">
             <mat-panel-title>
                 <div class="vehicle">
                     <h3> {{vehicle.name}} </h3>
@@ -15,6 +15,7 @@
             <div class="description">
                 <p> Model: {{vehicle.model}} </p> 
                 <p> Power Level Percent: {{vehicle.power_level_percent}} </p> 
+                <p *ngIf="distance"> Distance: {{ distance }}</p>
             </div>
         </mat-expansion-panel>
     </div>
