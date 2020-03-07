@@ -1,6 +1,10 @@
-# CndProject
+
+![](https://github.com/jeunesseBurce/cnd_vehicle_locator/blob/master/src/assets/images/RND.jpg)
+# Rover Next Door Lunar Locator
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.5.
+This project is a result of an assessment exercise from Car Next Door AUS. 
 
 ## Development server
 
