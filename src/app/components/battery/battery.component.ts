@@ -5,6 +5,7 @@ import { Component, OnInit, Input, AfterViewInit } from '@angular/core';
   templateUrl: './battery.component.html',
   styleUrls: ['./battery.component.scss']
 })
+
 export class BatteryComponent  {
 	@Input() public color: string;
 	@Input() public percentage: number;

@@ -14,6 +14,12 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MapComponent } from './components/map/map.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { FormsComponent } from './components/forms/forms.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+
+
 
 @NgModule({
   declarations: [
@@ -21,7 +27,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     MainComponent,
     VehicleCardComponent,
     BatteryComponent,
-    MapComponent
+    MapComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +38,10 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     MatCardModule,
     MatGridListModule,
     MatExpansionModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatInputModule,
+    MatButtonModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
