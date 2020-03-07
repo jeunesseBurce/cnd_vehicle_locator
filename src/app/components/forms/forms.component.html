@@ -1,0 +1,9 @@
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+      <input matInput #lat placeholder="Latitude" value="">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput #long placeholder="Longitude" value="">
+    </mat-form-field>
+      <button type="button" mat-flat-button class="button-form" (click)="onClick(lat.value, long.value)">SEARCH</button>
+</form>
