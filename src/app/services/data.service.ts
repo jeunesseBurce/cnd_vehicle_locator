@@ -20,7 +20,7 @@ export class DataService {
     const observables = [];
     for (let i = 0; i < 6; i++) {
       observables.push(
-        this.http.get(`http://cndlunarlocator.herokuapp.com/vehicles/${i}/locate.json`)
+        this.http.get(`https://cndlunarlocator.herokuapp.com/vehicles/${i}/locate.json`)
       );
     }
 

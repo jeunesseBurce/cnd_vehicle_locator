@@ -43,16 +43,16 @@ $primary-bold: 'Brandon Text Bold';
         flex-shrink: 1;
         order: 2;
         width: 100%;
-        max-width: 20%;
+        max-width: 315px;
     }
 
     .map-container {
-        height: 650px;
+        height: 750px;
         margin: 0px 10px;
         flex-shrink: 2;
         order: 3;
         width: 100%;
-        max-width: 75%;
+        max-width: 70%;
     }
 }
          
@@ -119,16 +119,3 @@ $primary-bold: 'Brandon Text Bold';
     }
          
 }
-         
-    
-         
-    @media (min-width: 1024px){
-         
-         
-    }
-         
-    @media (min-width: 1200px){
-         
-    
-         
-    }

@@ -24,14 +24,14 @@ export class MapComponent implements OnInit, AfterViewInit {
   
   pinMarker = new google.maps.Marker({
     position: this.coordinates,
-    icon: '../../../assets/images/placeholder.png',
+    icon: 'assets/images/placeholder.png',
     map: this.map,
     animation: google.maps.Animation.DROP
   });
 
   commandCenterMarker = new google.maps.Marker({
     position: new google.maps.LatLng(0.681400, 23.460550),
-    icon: '../../../assets/images/control-center.png',
+    icon: 'assets/images/control-center.png',
     map: this.map,
   });
 
@@ -80,7 +80,7 @@ export class MapComponent implements OnInit, AfterViewInit {
 
     this.pinMarker = new google.maps.Marker({
       position: new google.maps.LatLng(0.681400, 23.460550),
-      icon: '../../../assets/images/placeholder.png',
+      icon: 'assets/images/placeholder.png',
       map: this.map,
       animation: google.maps.Animation.DROP,
     });
@@ -114,7 +114,7 @@ export class MapComponent implements OnInit, AfterViewInit {
           position: new google.maps.LatLng(
             vehicles[i].lat, 
             vehicles[i].long),
-          icon: '../../../assets/images/moon-rover.png',
+          icon: 'assets/images/moon-rover.png',
           map: this.map
         });
         roverMarker.setMap(this.map);
