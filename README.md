@@ -29,3 +29,26 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## Process of project creation is as follows: 
+- UI/UX Sketch with reference to wireframes
+- Created initial project using Angular 9 thru Angular CLI
+- Read about Angular 9 (I am adept to using React.js but I initiated to try doing the assessment on Angular, since it is the company's tech stack)
+- Followed the assessment's instructions and created this project as a result. 
+
+
+## Tech Stack:
+- Angular v.9.0.5
+- RxJS
+- Angular Material (UI Components)
+- Augury (For develop purposes)
+- SCSS (CSS pre-processor) 
+- TypeScript (Added typings for Google Maps)
+
+## API used: 
+- Google Maps API 
+- http://cndlunarlocator.herokuapp.com/vehicles/0/locate.json (Given API for lunar locator) 
+
+## Tools: 
+- Procreate (For CND Logo re-vamp to Rover Next Door)
