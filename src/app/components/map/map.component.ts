@@ -26,6 +26,7 @@ export class MapComponent implements OnInit, AfterViewInit {
     position: this.coordinates,
     icon: '../../../assets/images/placeholder.png',
     map: this.map,
+    animation: google.maps.Animation.DROP
   });
 
   commandCenterMarker = new google.maps.Marker({
@@ -81,7 +82,17 @@ export class MapComponent implements OnInit, AfterViewInit {
       position: new google.maps.LatLng(0.681400, 23.460550),
       icon: '../../../assets/images/placeholder.png',
       map: this.map,
+      animation: google.maps.Animation.DROP,
     });
+
+    this.pinMarker.addListener('click', toggleBounce);
+    function toggleBounce() {
+      if (this.pinMarker.getAnimation() !== null) {
+        this.pinMarker.setAnimation(null);
+      } else {
+        this.pinMarker.setAnimation(google.maps.Animation.BOUNCE);
+      }
+    }
 
     this.pinMarker.setMap(this.map);
     this.pinMarker.setZIndex(999);
@@ -110,13 +121,14 @@ export class MapComponent implements OnInit, AfterViewInit {
       }
     });
 
+
+
     this.data.coord.subscribe(coord => {
       const [lat, long] = coord;
       const position = new google.maps.LatLng(lat, long);
       
       this.pinMarker.setZIndex(999);
       this.pinMarker.setPosition(position);
-      
     })
   }
 }
